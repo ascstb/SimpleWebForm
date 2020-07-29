@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registro</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-img">
+                    <img src="images/signup-img.jpg" alt="">
+                </div>
+                <div class="signup-form">
+                    <form method="POST" class="register-form" id="register-form">
+                        <h2>REGISTRO</h2>
+
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="country">Nacionalidad :</label>
+                                <div class="form-select">
+                                    <select name="country" id="ddlCountry" onchange="onCountryChanged(this)" required>
+                                        <option value=""></option>
+                                        <option value="us">EUA</option>
+                                        <option value="es">Mexico</option>
+                                    </select>
+                                    <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                
+                                <div class="form-select">
+                                    
+                                   
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-row">
+                            <div class="grupo3">
+                                <label for="name">Nombre :</label>
+                                <input type="text" name="name" id="txtName" required/>
+                            </div>
+                            <div class="grupo3">
+                                <label for="father_name">Apellido Paterno :</label>
+                                <input type="text" name="father_name" id="txtLastName" required/>
+                            </div>
+                             <div class="grupo3" id="dvSecondLastName">
+                                <label for="mother_name" >Apellido Materno :</label>
+                                <input type="text" name="mother_name" id="txtSecondLastName" />
+                            </div>
+                        </div>
+                       
+                        <div class="form-radio">
+                            <label for="gender" class="radio-label">Genero :</label>
+                            <div class="form-radio-item">
+                                <input type="radio" name="gender" id="male" checked>
+                                <label for="male">Masculino</label>
+                                <span class="check"></span>
+                            </div>
+                            <div class="form-radio-item">
+                                <input type="radio" name="gender" id="female">
+                                <label for="female">Femenino</label>
+                                <span class="check"></span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="state">Numero de celular :</label>
+                                <div class="form-select">
+                                     <input type="tel" pattern="[0-9]{10}" name="telefono" id="telefono" placeholder="Num. Tel de 10 digitos" required> 
+                                  
+                                </div>
+                            </div>
+                            <div class="form-group">
+                               
+                                <div class="form-select">
+                                    
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="birth_date">Fecha de nacimiento :</label>
+                            <input type="date" name="birth_date" id="birth_date">
+                        </div>
+
+                        
+
+                        <div class="form-row">
+                        <div class="grupo3">
+                            <label for="direccion">Direccion :</label>
+                            <input type="text" name="direccion" id="direccion">
+                        </div>
+                            <div class="grupo3" >
+                            <label for="direccion">Num Ext :</label>
+                            <input maxlength="8" onkeypress="return check(event)" type="text" name="direccion" id="direccion">
+                        </div>
+                         <div class="grupo3" >
+                            <label for="direccion">Num Int :</label>
+                            <input maxlength="8" onkeypress="return check(event)" type="text" name="direccion" id="direccion">
+                        </div>
+
+
+                        </div>
+
+                        <div class="form-row">
+                        <div class="grupo3">
+                            <label for="direccion">Codigo postal :</label>
+                            <input maxlength="8" type="number" name="direccion" id="direccion">
+                        </div>
+                            <div class="grupo3">
+                            <label for="direccion">Ciudad :</label>
+                            <input onkeypress="return check(event)" type="text" name="direccion" id="direccion">
+                        </div>
+                         <div class="grupo3">
+                            <label for="direccion">Estado :</label>
+                            <input onkeypress="return check(event)" type="text" name="direccion" id="direccion">
+                        </div>
+
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Correo electronico :</label>
+                            <input type="email" name="email" id="email" placeholder="correo@hotmail.com" />
+                        </div>
+                        <div class="form-submit">
+                            <input type="submit" value="Limpiar" class="submit" name="reset" id="reset" />
+                            <input type="submit" value="Guardar" class="submit" name="submit" id="btnSubmit" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

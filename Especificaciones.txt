@@ -1,0 +1,21 @@
+
+
+
+formulario
+
+nacionalidad
+-dropdown de paises(nombre y y bandera)
+si es mecxicana dos apellidos   validar campos
+si es usa un solo apellido   validar campos
+
+fecha de nacimiento
+email- validacion 
+num de celular- validacion
+direccion(num exterior, num int(no obligatorio), ciudad, zipcode opcional, estado)
+ 
+botones
+guardar y limpiar
+
+Se recomienda:
+descargar un template bootstrap
+
